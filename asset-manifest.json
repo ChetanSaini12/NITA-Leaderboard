@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/NITA-Leaderboard/static/css/main.bdbd82ff.css",
-    "main.js": "/NITA-Leaderboard/static/js/main.efb3d18e.js",
+    "main.css": "/NITA-Leaderboard/static/css/main.2f99455b.css",
+    "main.js": "/NITA-Leaderboard/static/js/main.5678b42c.js",
     "static/js/787.fe1675bb.chunk.js": "/NITA-Leaderboard/static/js/787.fe1675bb.chunk.js",
     "index.html": "/NITA-Leaderboard/index.html",
-    "main.bdbd82ff.css.map": "/NITA-Leaderboard/static/css/main.bdbd82ff.css.map",
-    "main.efb3d18e.js.map": "/NITA-Leaderboard/static/js/main.efb3d18e.js.map",
+    "main.2f99455b.css.map": "/NITA-Leaderboard/static/css/main.2f99455b.css.map",
+    "main.5678b42c.js.map": "/NITA-Leaderboard/static/js/main.5678b42c.js.map",
     "787.fe1675bb.chunk.js.map": "/NITA-Leaderboard/static/js/787.fe1675bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdbd82ff.css",
-    "static/js/main.efb3d18e.js"
+    "static/css/main.2f99455b.css",
+    "static/js/main.5678b42c.js"
   ]
 }

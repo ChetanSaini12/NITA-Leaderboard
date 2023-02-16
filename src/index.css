@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background-color: hsl(var(--wa));
 }
-
+/* 
 .dropdown ::-webkit-scrollbar {
   width: 5px;
 }
@@ -57,10 +57,10 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: transparent;
   border-radius: 10px;
   overflow: hidden;
-}
+} */
 
 /* Styles for dropdown button and menu */
-.dropdown {
+/* .dropdown {
   position: relative;
   display: inline-block;
 }
@@ -77,7 +77,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   top: 100%;
   left: 0;
-  /* background-color: white; */
+  background-color: white; 
   border: 1px solid #d2d6dc;
   z-index: 1;
   min-width: 100px;
@@ -97,10 +97,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .dropdown-item:hover {
   background-color: #f7fafc;
-}
+} */
 
 /* Styles for responsive dropdown */
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   .dropdown {
     display: flex;
     flex-direction: column;
@@ -127,3 +127,30 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 8px;
   }
 }
+ */
+
+/* .dropdown.dropdown-open .dropdown-content,
+.dropdown.dropdown-hover:hover .dropdown-content,
+.dropdown:not(.dropdown-hover):focus .dropdown-content,
+.dropdown:not(.dropdown-hover):focus-within .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+} */
+
+/* .dropdown:not(.dropdown-hover):focus-within .dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+} */
+
+/* .dropdown:not(.dropdown-hover):focus-within .dropdown-content[aria-hidden="true"] {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.dropdown:not(.dropdown-hover):focus-within .dropdown-content[aria-hidden="false"] {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+} */

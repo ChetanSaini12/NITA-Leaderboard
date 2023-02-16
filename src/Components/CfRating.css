@@ -1,11 +1,18 @@
 .mockup-window {
-    width: 95vw;
+    width: 98vw;
     background-color: hsl(var(--n));
-    margin: 10px 0;
 }
 
 .tot{
     color: black;
+    margin: 10px 0;
+}
+
+.thm {
+    background-color: aqua;
+    position: fixed;
+    left: 1.3vw;
+    bottom: 9.5vh;
 }
 
 .xyz {

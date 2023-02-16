@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="autumn" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link
@@ -37,90 +37,10 @@
 
 
       <noscript>Check Where Are You Standing</noscript>
-    <div class="dropdown dropdown-bottom" style="position: fixed; z-index: 1; ">
-        <button tabindex="0" class="btn m-1"><i class="fas fa-regular fa-sun-bright"></i></button>
-        <ul
-      tabindex="0"
-      class="dropdown-content menu p-2 shadow bg-base-100 rounded-box "
-      style=" max-height: 800px; display: block; overflow-y: scroll;"
-    >
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('light')"
-          >Light</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('night')"
-          >Night</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('cupcake')"
-          >Cupcake</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('black')"
-          >Black</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('coffee')"
-          >Coffee</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('corporate')"
-          >Corporate</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('retro')"
-          >Retro</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('valentine')"
-          >Valentine</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('pastel')"
-          >Pastel</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('dracula')"
-          >Dracula</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('autumn')"
-          >Autumn</a
-        >
-      </li>
-      <li style="display: block;">
-        <a class="dropdown-item" href="#" onclick="setTheme('dark')"
-          >Dark</a
-        >
-      </li>
-    </ul>
-      </div>
-      
-      
+
       <div id="root"></div>
       
 
-
-    <script>
-      function setTheme(themeName) {
-        localStorage.setItem("theme", themeName);
-        document.documentElement.setAttribute("data-theme", themeName);
-      } // Get saved theme from localStorage 
-      const savedTheme = localStorage.getItem("theme"); 
-      // If a saved theme exists, apply it 
-      if (savedTheme) { setTheme(savedTheme); }
-      </script>
   </body>
 </html>
 

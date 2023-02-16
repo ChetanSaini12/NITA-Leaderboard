@@ -1,6 +1,11 @@
 .mockup-window {
-    width: 80vw;
+    width: 95vw;
     background-color: hsl(var(--n));
+    margin: 10px 0;
+}
+
+.tot{
+    color: black;
 }
 
 .xyz {

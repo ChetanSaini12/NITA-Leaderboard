@@ -28,10 +28,10 @@ function Content(props) {
             return 0;
           }
         });
-        
+
         setItems(sortedItems);
       });
-    }, [ismax, iscur]);
+  }, [ismax, iscur]);
 
   return (
     <>
@@ -87,7 +87,7 @@ function Content(props) {
           </button>
           <div className="w-3/12">Level</div>
         </div>
-        
+
         {/* Header Close */}
 
         <hr className="mb-5 border-none h-px bg-black"></hr>
@@ -102,11 +102,13 @@ function Content(props) {
           >
             <div className="w-1/12">{index + 1}.</div>
             <div className="w-3/12 justify-center flex">
-              <img
-                src={item.avatar}
-                alt={item.handle}
-                className="Avatar"
-              />
+              <a
+                href={`https://codeforces.com/profile/${item.handle}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={item.avatar} alt={item.handle} className="Avatar" />
+              </a>
             </div>
             <div className="w-3/12 overflow-hidden">
               <a
@@ -153,16 +155,19 @@ function Content(props) {
                     : "bg-newbie"
                 }`}
               >
-                {ismax
-                  ? (item.maxRank == "candidate master")
-                      ? <span className="d-inline-block d-md-none">Cand. Master</span>
-                      : (item.maxRank.charAt(0).toUpperCase() + item.maxRank.slice(1))
-                    
-                  : (item.rank == "candidate master")
-                      ? <span>Cand. Master</span>
-                      : (item.rank.charAt(0).toUpperCase() + item.rank.slice(1))
-                      
-                }
+                {ismax ? (
+                  item.maxRank == "candidate master" ? (
+                    <span className="d-inline-block d-md-none">
+                      Cand. Master
+                    </span>
+                  ) : (
+                    item.maxRank.charAt(0).toUpperCase() + item.maxRank.slice(1)
+                  )
+                ) : item.rank == "candidate master" ? (
+                  <span>Cand. Master</span>
+                ) : (
+                  item.rank.charAt(0).toUpperCase() + item.rank.slice(1)
+                )}
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import './CfRating.css'
 
 function CfRating() {
   return (
-    <div>
+    <div className="tot">
       <div className="mockup-window  border bg-base-300">
         <div className="flex justify-center px-4 py-6 xyz bg-base-200">
         {/* <div className="dropdown dropdown-hover">

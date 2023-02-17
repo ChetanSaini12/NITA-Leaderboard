@@ -63,9 +63,10 @@
   .badge-lg {
     /* overflow: hidden; */
     height: 1rem/* 24px */;
-    font-size: 0.5rem/* 16px */;
+    font-size: 0.4rem/* 16px */;
     line-height: 1.rem/* 24px */;
     padding-left: 0.388rem/* 11.008px */;
     padding-right: 0.388rem/* 11.008px */;
+    
   }
 }

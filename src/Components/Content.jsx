@@ -124,7 +124,7 @@ function Content(props) {
             <div className="w-3/12 ">
               <kbd>{item.rating}</kbd>
             </div>
-            <div className="w-3/12 ">
+            <div className="w-3/12 "> 
               <kbd>{item.maxRating}</kbd>
             </div>
             <div className="w-3/12">

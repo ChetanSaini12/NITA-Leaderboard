@@ -27,9 +27,9 @@ function Details(props) {
         <label className="modal-box w-11/12 max-w-5xl relative" htmlFor="">
           <hr className="line1"></hr>
           <hr className="line2"></hr>
-          <button className="aatar">
+          <div className="aatar">
             <img src={props.avatar} alt={props.handle} className="DAvatar" />
-          </button>
+          </div>
           <div>
             <kbd>
               <b> {props.handle}</b>

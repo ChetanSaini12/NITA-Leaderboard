@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 import "./Details.css";
 
 function Details(props) {
   // const [isOpen, setIsOpen] = useState(props.ind == -1);
   const [isOpen, setIsOpen] = useState(props.ind > -1);
-  const [Element, setElement] = useState([]);
 
   const handleCloseModal = () => {
     setIsOpen(false);
@@ -15,19 +13,6 @@ function Details(props) {
   useEffect(() => {
     setIsOpen(props.ind > -1);
   }, [props.ind]);
-
-  useEffect(() => {
-    fetch(
-      "https://codeforces.com/api/user.status?handle=chetan_saini&from=1&count=10"   )
-      .then((result) => result.json())
-      .then((response) => {
-        const sortedElement = response.result.sort((a, b) => {
-          return b.id - a.id;
-        });
-
-        setElement(sortedElement);
-      });
-  }, []);
 
   return (
     <div className="box">
@@ -42,9 +27,9 @@ function Details(props) {
         <label className="modal-box w-11/12 max-w-5xl relative" htmlFor="">
           <hr className="line1"></hr>
           <hr className="line2"></hr>
-          <a className="aatar">
+          <button className="aatar">
             <img src={props.avatar} alt={props.handle} className="DAvatar" />
-          </a>
+          </button>
           <div>
             <kbd>
               <b> {props.handle}</b>

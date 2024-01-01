@@ -155,7 +155,7 @@
                       curRating: item.rating,
                       rank: item.rank,
                       maxRank: item.maxRank,
-                      state: ((iscur!=2)&&(ismax!=1)) ? index : items.length-index-1
+                      state: ((iscur!==2)&&(ismax!==1)) ? index : items.length-index-1
                     });
                   }}
                 >

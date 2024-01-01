@@ -24,6 +24,8 @@
   background-color: #808080;
 }
 
+
+
 .rt {
   font-size: 56px;
 }
@@ -70,3 +72,14 @@
     
   }
 }
+
+
+.box{
+  background-color: #0000FF;
+  border: #00ff66;
+  border-width: 2px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+

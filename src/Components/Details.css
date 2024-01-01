@@ -1,0 +1,57 @@
+.bnt {
+  cursor: pointer;
+  background-color: hsl(var(--n));
+  color: white;
+  border-radius: 50%;
+  padding-top: 1px;
+  height: 30px;
+  width: 33px;
+  font-size: 18px;
+}
+
+.modal-box {
+    background-image: linear-gradient(150deg, hsl(var(--nc)), hsl(var(--su)), hsl(var(--in)));
+}
+
+.line1 {
+  position: sticky;
+  top: 19%;
+  margin-top: 1px;
+  border-color: black;
+}
+.line2 {
+  position: sticky;
+  top: 20%;
+  margin-top: 1px;
+  border-color: black;
+}
+
+.aatar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.DAvatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.Rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.RatCol{
+    width: 20%;
+    background-color: transparent;
+    padding: 1%;
+    border: 4px double black;
+     border-radius: 10px;
+}
+
+.RatCol .line {
+    border-color: black;
+}
